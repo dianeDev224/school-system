@@ -48,13 +48,6 @@ function createWindow() {
     // win.loadFile('dist/index.html')
     win.loadFile(path.join(process.env.DIST, 'index.html'))
   }
-
-  win.on("close" , (e)=>{
-    if(win){
-      e.preventDefault() ;
-      win?.webContents.send("app-quitting")
-    }
-  })
 }
 
 

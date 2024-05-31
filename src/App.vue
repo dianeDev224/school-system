@@ -4,7 +4,7 @@
 
 
 <template>
-    <RouterView/>
+  Hello wordl
 </template>
 
 <style scoped>

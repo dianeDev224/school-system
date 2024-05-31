@@ -1,19 +1,9 @@
 <script setup lang="ts">
-// @ts-nocheck
-  import LoginForm from "@/components/login-form.vue";
-  import LoginBrandImage from "@/components/icons/login-brand-image.vue";
-
 </script>
 
 <template>
-  <!---@ts-nocheck--->
   <el-row>
-    <el-col :span="12" >
-      <login-brand-image/>
-    </el-col>
-    <el-col :span="12">
-      <login-form/>
-    </el-col>
+    Hello from login
   </el-row>
 </template>
 
