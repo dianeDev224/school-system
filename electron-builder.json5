@@ -3,9 +3,9 @@
  */
 {
   "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-  "appId": "org.eschool",
+  "appId": "alsabaCash",
   "asar": true,
-  "productName": "Eschool",
+  "productName": "Alsab Cash",
 
   "directories": {
     "output": "release/${version}" ,
@@ -21,7 +21,7 @@
     "artifactName": "${productName}-${version}-.${ext}"
   },
   "win": {
-    icon: "dist/icon.ico",
+    icon: "build/icon.ico",
     "target": [
       {
         "target": "nsis",
@@ -33,12 +33,17 @@
     "artifactName": "${productName}-${version}.${ext}"
   },
   "nsis": {
-    artifactName: "${productName}-${version}.${ext}",
-    installerHeaderIcon: "dist/icon.ico",
     "oneClick": false,
     "perMachine": false,
     "allowToChangeInstallationDirectory": true,
-    "deleteAppDataOnUninstall": false
+    "deleteAppDataOnUninstall": false ,
+    publish: [{
+      private: true,
+      provider: "github" ,
+      repo: "school-system",
+      owner: "dianeDev224"
+    }
+    ]
   },
   "linux": {
     "target": [

@@ -4,7 +4,7 @@
 
 
 <template>
-  Hello wordl
+    hello from App.vue
 </template>
 
 <style scoped>

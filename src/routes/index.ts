@@ -1,19 +1,22 @@
 // @ts-nocheck
 import {createMemoryHistory , createRouter} from 'vue-router'
-import LoginView from "@/views/LoginView.vue";
+import HomeView from "@/views/HomeView.vue";
 
 
 const routes = [
     {
-        path : "/login" ,
-        name : "login" ,
-        component : LoginView
+        path : "/" ,
+        name : "dashboard" ,
+        component : HomeView ,
     }
 ]
+
+
 
 const router = createRouter({
     history : createMemoryHistory() ,
     routes : routes
 })
+
 
 export {router}

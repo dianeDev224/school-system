@@ -14,5 +14,5 @@ import fr from 'element-plus/es/locale/lang/fr'
 
 
 createApp(App).use({locale: fr}).use(router).mount('#app').$nextTick(() => {
-    
+  // Use contextBridge
 })

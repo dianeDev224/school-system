@@ -7,11 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ArrowRight: typeof import('./src/components/icons/arrow-right.vue')['default']
-    CountryFlag: typeof import('./src/components/icons/country-flag.vue')['default']
-    DashbordIcon: typeof import('./src/components/icons/dashbord-icon.vue')['default']
-    ElRow: typeof import('element-plus/es')['ElRow']
-    LoginBrandImage: typeof import('./src/components/icons/login-brand-image.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
